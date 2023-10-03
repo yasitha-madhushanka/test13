@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | online</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=720 height=1280 style="width: 720px; height: 1280px; background: #231F20"></canvas>
+    <script src="Build/e9dadf13d3d2ec49cc33413f986a95cb.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/28fec44bb085c918cd90c4ebf741dfed.data.br",
+        frameworkUrl: "Build/83b764cd96af84cb294cc14ee1d83d2a.js.br",
+        codeUrl: "Build/22acd2c967ae88264abe8548deeb849f.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "online",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
